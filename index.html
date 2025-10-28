@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio Elisangela</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><button onclick="abrirPopup('softskills')">Soft Skills</button></li>
+        <li><button onclick="abrirPopup('contatos')">Contatos</button></li>
+        <li><button onclick="abrirPopup('endereco')">Endereço</button></li>
+      </ul>
+    </nav>
+    <h1 class="titulo-principal">Portfólio</h1>
+  <h1 class="subtitulo-brilhante">Elisângela Lima Web Designer</h1>
+  </header>
+
+  <main>
+<section class="circles">
+  <div class="circle" onclick="abrirGitHub()">
+    <img src="imagens/img1.jpg" alt="Projetos GitHub" />
+    <div class="circle-label">Projetos</div>
+  </div>
+  <div class="circle" onclick="abrirPopup('contatos')">
+    <img src="imagens/img2.jpeg" alt="Contatos" />
+    <div class="circle-label">Contatos</div>
+  </div>
+</section>
+
+
+<section id="apresentacao">
+  <h2>Sobre Mim</h2>
+  <p>Sou Elisangela, Web Designer especializada em criar experiências digitais que encantam e convertem. Com domínio em design responsivo, acessibilidade e estética futurista, transformo ideias em interfaces memoráveis. Meu foco é conectar marcas e pessoas por meio de soluções visuais inteligentes e funcionais.</p>
+</section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Elisangela - Todos os direitos reservados</p>
+  </footer>
+
+  <!-- POPUPS -->
+<div class="popup popup-softskills" id="popup-softskills" aria-hidden="true">
+  <div class="popup-content">
+    <span class="close" onclick="fecharPopup('softskills')">&times;</span>
+    <h2>Soft Skills</h2>
+    <ul>
+      <li>Comunicação</li>
+      <li>Trabalho em equipe</li>
+      <li>Resolução de problemas</li>
+      <li>Empatia</li>
+    </ul>
+  </div>
+</div>
+
+<div class="popup popup-contatos" id="popup-contatos" aria-hidden="true">
+  <div class="popup-content">
+    <span class="close" onclick="fecharPopup('contatos')">&times;</span>
+    <h2>Contatos</h2>
+    <p>Email: elisangela.lima1405@hotmail.com</p>
+    <p>WhatsApp: +55 13 99604-5900</p>
+  </div>
+</div>
+
+<div class="popup popup-endereco" id="popup-endereco" aria-hidden="true">
+  <div class="popup-content">
+    <span class="close" onclick="fecharPopup('endereco')">&times;</span>
+    <h2>Endereço</h2>
+    <p>Rua Elias Zarzur, 29A - Água Fria, Cubatão/SP</p>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
